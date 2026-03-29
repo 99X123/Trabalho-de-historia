@@ -247,7 +247,7 @@
 
     .capa-eyebrow {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: clamp(0.55rem, 1vw, 0.75rem);
+      font-size: clamp(0.75rem, 1.3vw, 1rem);
       letter-spacing: 0.55em;
       color: var(--sand);
       opacity: 0.7;
@@ -258,7 +258,7 @@
 
     .capa-h1 {
       font-family: 'Cinzel', serif;
-      font-size: clamp(2.8rem, 7vw, 6.5rem);
+      font-size: clamp(3.5rem, 9vw, 8rem);
       font-weight: 900;
       line-height: 0.95;
       background: linear-gradient(160deg, #f0e0b0 0%, #e2c87a 30%, #c9a84c 60%, #b05030 100%);
@@ -301,10 +301,10 @@
     .capa-sub {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(1rem, 2vw, 1.4rem);
+      font-size: clamp(1.2rem, 2.2vw, 1.75rem);
       font-weight: 300;
       color: var(--white70);
-      max-width: 560px;
+      max-width: 620px;
       line-height: 1.8;
       animation: fadeUp 1s ease 1.2s both;
     }
@@ -323,14 +323,14 @@
 
     .year-num {
       font-family: 'Cinzel', serif;
-      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-size: clamp(1.3rem, 2.5vw, 2rem);
       color: var(--gold);
       display: block;
     }
 
     .year-label {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.6rem;
+      font-size: 0.75rem;
       letter-spacing: 0.25em;
       color: var(--white50);
       display: block;
@@ -381,44 +381,50 @@
       gap: 0;
       width: 90vw;
       max-width: 1200px;
-      height: 80vh;
+      height: 90vh;
+      max-height: 90vh;
       position: relative;
       z-index: 2;
+      overflow: hidden;
     }
 
     .s2-left {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-right: 60px;
+      padding-right: 40px;
       border-right: 1px solid rgba(201, 168, 76, 0.12);
+      overflow: hidden;
+      min-height: 0;
     }
 
     .s2-right {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: 60px;
-      gap: 20px;
+      padding-left: 40px;
+      gap: 12px;
+      overflow: hidden;
+      min-height: 0;
     }
 
     .slide-tag {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       letter-spacing: 0.5em;
       color: var(--sand);
       opacity: 0.6;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 10px;
     }
 
     .slide-h2 {
       font-family: 'Cinzel', serif;
-      font-size: clamp(1.6rem, 3.5vw, 3rem);
+      font-size: clamp(2rem, 4.5vw, 4rem);
       font-weight: 700;
       line-height: 1.05;
       color: var(--cream);
-      margin-bottom: 24px;
+      margin-bottom: 14px;
     }
 
     .slide-h2 span {
@@ -427,7 +433,7 @@
 
     .body-text {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+      font-size: clamp(1.1rem, 1.7vw, 1.45rem);
       line-height: 1.85;
       color: var(--white70);
       font-weight: 300;
@@ -441,7 +447,7 @@
 
     .stat-num {
       font-family: 'Cinzel', serif;
-      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      font-size: clamp(1.7rem, 3vw, 2.8rem);
       color: var(--gold);
       display: block;
       font-weight: 700;
@@ -449,7 +455,7 @@
 
     .stat-desc {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.7rem;
+      font-size: 0.85rem;
       letter-spacing: 0.15em;
       color: var(--white50);
       text-transform: uppercase;
@@ -470,7 +476,7 @@
       display: flex;
       align-items: flex-start;
       gap: 16px;
-      padding: 10px 0;
+      padding: 6px 0;
       position: relative;
     }
 
@@ -488,15 +494,15 @@
 
     .tl-date {
       font-family: 'Cinzel', serif;
-      font-size: 0.75rem;
+      font-size: 0.95rem;
       color: var(--gold);
-      min-width: 80px;
+      min-width: 90px;
       padding-top: 2px;
     }
 
     .tl-text {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.72rem;
+      font-size: 0.88rem;
       letter-spacing: 0.08em;
       color: var(--white50);
       line-height: 1.5;
@@ -559,14 +565,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 60px 60px 60px 50px;
+      padding: 40px 50px 40px 40px;
       position: relative;
       z-index: 2;
+      overflow: hidden;
+      min-height: 0;
     }
 
     .city-name-large {
       font-family: 'Cinzel', serif;
-      font-size: clamp(2rem, 4vw, 3.8rem);
+      font-size: clamp(2.8rem, 5.5vw, 5.2rem);
       font-weight: 900;
       line-height: 1;
       color: var(--cream);
@@ -580,17 +588,17 @@
     .city-meaning {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(0.85rem, 1.2vw, 1rem);
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
       color: var(--terra);
-      margin-bottom: 28px;
+      margin-bottom: 14px;
       letter-spacing: 0.05em;
     }
 
     .fact-row {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 6px;
+      margin-bottom: 12px;
     }
 
     .fact-item {
@@ -610,7 +618,7 @@
 
     .fact-label {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.65rem;
+      font-size: 0.8rem;
       letter-spacing: 0.2em;
       color: var(--sand);
       text-transform: uppercase;
@@ -620,22 +628,22 @@
 
     .fact-val {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(0.85rem, 1.3vw, 1rem);
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
       color: var(--white70);
       line-height: 1.5;
     }
 
     .highlight-quote {
       border-left: 2px solid var(--terra);
-      padding: 12px 18px;
+      padding: 8px 14px;
       background: rgba(176, 80, 48, 0.07);
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
     .highlight-quote p {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(0.85rem, 1.3vw, 1rem);
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
       color: var(--parchment);
       line-height: 1.65;
     }
@@ -643,18 +651,18 @@
     .tag-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 22px;
+      gap: 6px;
+      margin-top: 10px;
     }
 
     .tag {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.58rem;
+      font-size: 0.75rem;
       letter-spacing: 0.18em;
       color: var(--terra);
       border: 1px solid rgba(176, 80, 48, 0.4);
       border-radius: 20px;
-      padding: 5px 13px;
+      padding: 6px 15px;
       text-transform: uppercase;
     }
 
@@ -668,28 +676,32 @@
     .s4-inner {
       width: 92vw;
       max-width: 1250px;
-      height: 88vh;
+      height: 90vh;
+      max-height: 90vh;
       display: flex;
       flex-direction: column;
       position: relative;
       z-index: 2;
+      overflow: hidden;
     }
 
     .s4-header {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      margin-bottom: 28px;
+      margin-bottom: 14px;
       border-bottom: 1px solid rgba(201, 168, 76, 0.12);
-      padding-bottom: 20px;
+      padding-bottom: 12px;
+      flex-shrink: 0;
     }
 
     .s4-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      gap: 16px;
+      gap: 10px;
       flex: 1;
+      min-height: 0;
     }
 
     .s4-card {
@@ -701,6 +713,7 @@
       flex-direction: column;
       transition: border-color 0.3s, transform 0.3s;
       position: relative;
+      min-height: 0;
     }
 
     .s4-card:hover {
@@ -710,7 +723,7 @@
 
     .s4-card-img {
       width: 100%;
-      height: 105px;
+      height: 75px;
       object-fit: cover;
       display: block;
       opacity: 0.65;
@@ -718,15 +731,17 @@
     }
 
     .s4-card-body {
-      padding: 14px 16px;
+      padding: 8px 12px;
       flex: 1;
       display: flex;
       flex-direction: column;
+      min-height: 0;
+      overflow: hidden;
     }
 
     .s4-card-title {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.65rem;
+      font-size: 0.82rem;
       letter-spacing: 0.2em;
       color: var(--gold);
       text-transform: uppercase;
@@ -735,7 +750,7 @@
 
     .s4-card-text {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+      font-size: clamp(0.95rem, 1.3vw, 1.1rem);
       line-height: 1.6;
       color: var(--white50);
       flex: 1;
@@ -774,10 +789,12 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 60px 50px 60px 60px;
+      padding: 40px 40px 40px 50px;
       position: relative;
       z-index: 2;
       border-right: 1px solid rgba(96, 128, 208, 0.15);
+      overflow: hidden;
+      min-height: 0;
     }
 
     .s5-img-side {
@@ -801,7 +818,7 @@
 
     .harappa-city-name {
       font-family: 'Cinzel', serif;
-      font-size: clamp(2rem, 4vw, 3.8rem);
+      font-size: clamp(2.8rem, 5.5vw, 5.2rem);
       font-weight: 900;
       line-height: 1;
       color: var(--cream);
@@ -815,10 +832,10 @@
     .harappa-meaning {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(0.85rem, 1.2vw, 1rem);
+      font-size: clamp(1rem, 1.5vw, 1.3rem);
       color: var(--indigo-lt);
       opacity: 0.7;
-      margin-bottom: 28px;
+      margin-bottom: 14px;
     }
 
     .tag.blue {
@@ -861,29 +878,33 @@
     .s6-inner {
       width: 92vw;
       max-width: 1250px;
-      height: 88vh;
+      height: 90vh;
+      max-height: 90vh;
       display: flex;
       flex-direction: column;
       position: relative;
       z-index: 2;
+      overflow: hidden;
     }
 
     .s6-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 12px;
       flex: 1;
-      margin-top: 28px;
+      margin-top: 14px;
+      min-height: 0;
     }
 
     .s6-card {
       border: 1px solid rgba(201, 168, 76, 0.1);
       border-radius: 8px;
-      padding: 26px 24px;
+      padding: 16px 18px;
       background: rgba(255, 255, 255, 0.015);
       position: relative;
       overflow: hidden;
       transition: all 0.35s ease;
+      min-height: 0;
     }
 
     .s6-card::after {
@@ -920,7 +941,7 @@
 
     .s6-card-title {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.65rem;
+      font-size: 0.82rem;
       letter-spacing: 0.25em;
       color: var(--gold);
       text-transform: uppercase;
@@ -929,7 +950,7 @@
 
     .s6-card-text {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(0.85rem, 1.2vw, 1rem);
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
       line-height: 1.75;
       color: var(--white70);
       font-weight: 300;
@@ -948,11 +969,13 @@
     .s7-inner {
       width: 88vw;
       max-width: 1100px;
-      height: 88vh;
+      height: 90vh;
+      max-height: 90vh;
       display: flex;
       flex-direction: column;
       position: relative;
       z-index: 2;
+      overflow: hidden;
     }
 
     .s7-table-wrap {
@@ -960,6 +983,7 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      min-height: 0;
     }
 
     table.compare {
@@ -973,9 +997,9 @@
     }
 
     table.compare th {
-      padding: 14px 20px;
+      padding: 10px 16px;
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.85rem;
       letter-spacing: 0.25em;
       text-align: left;
       text-transform: uppercase;
@@ -1008,16 +1032,16 @@
     }
 
     table.compare td {
-      padding: 13px 20px;
+      padding: 9px 16px;
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(0.85rem, 1.2vw, 1rem);
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
       color: var(--white70);
       line-height: 1.4;
     }
 
     table.compare td:first-child {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.6rem;
+      font-size: 0.78rem;
       letter-spacing: 0.15em;
       color: var(--sand);
       text-transform: uppercase;
@@ -1033,27 +1057,32 @@
       width: 92vw;
       max-width: 1200px;
       height: 90vh;
+      max-height: 90vh;
       display: flex;
       flex-direction: column;
       position: relative;
       z-index: 2;
+      overflow: hidden;
     }
 
     .s8-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 14px;
-      margin-top: 24px;
+      gap: 10px;
+      margin-top: 14px;
+      flex: 1;
+      min-height: 0;
     }
 
     .theory-card {
       border: 1px solid rgba(201, 168, 76, 0.1);
       border-radius: 8px;
-      padding: 20px 16px;
+      padding: 14px 14px;
       background: rgba(255, 255, 255, 0.015);
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease;
+      min-height: 0;
     }
 
     .theory-card::before {
@@ -1079,7 +1108,7 @@
 
     .theory-title {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.62rem;
+      font-size: 0.8rem;
       letter-spacing: 0.18em;
       color: var(--gold);
       text-transform: uppercase;
@@ -1088,7 +1117,7 @@
 
     .theory-text {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(0.82rem, 1.1vw, 0.95rem);
+      font-size: clamp(0.95rem, 1.3vw, 1.1rem);
       line-height: 1.7;
       color: var(--white50);
     }
@@ -1099,17 +1128,18 @@
     }
 
     .legacy-bar {
-      margin-top: 22px;
-      padding: 20px 28px;
+      margin-top: 12px;
+      padding: 14px 22px;
       border: 1px solid rgba(201, 168, 76, 0.18);
       border-radius: 8px;
       background: rgba(201, 168, 76, 0.04);
+      flex-shrink: 0;
     }
 
     .legacy-bar p {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
-      font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+      font-size: clamp(1.1rem, 1.6vw, 1.4rem);
       color: var(--parchment);
       line-height: 1.75;
       text-align: center;
@@ -1146,10 +1176,10 @@
 
     .s9-name {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
       font-weight: 400;
       color: var(--cream);
-      padding: 8px 40px;
+      padding: 10px 40px;
       border-bottom: 1px solid rgba(201, 168, 76, 0.1);
       transition: color 0.3s;
     }
@@ -1160,7 +1190,7 @@
 
     .s9-footer-text {
       font-family: 'Josefin Sans', sans-serif;
-      font-size: 0.6rem;
+      font-size: 0.78rem;
       letter-spacing: 0.35em;
       color: rgba(201, 168, 76, 0.35);
       text-transform: uppercase;
